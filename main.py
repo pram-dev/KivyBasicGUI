@@ -1,9 +1,13 @@
+"""
+Basic Kivy GUI built using the Kivy website tutorial.
+"""
+
 import kivy
-kivy.require("2.1.0")
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
+kivy.require("2.1.0")
 
 class LoginScreen(GridLayout):
     """
