@@ -9,10 +9,12 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
 kivy.require("2.1.0")
 
+
 class LoginScreen(GridLayout):
     """
     Login screen class used as root widget
     """
+
     def __init__(self, **kwargs):
         super(LoginScreen, self).__init__(**kwargs)
         self.cols = 2
@@ -23,12 +25,15 @@ class LoginScreen(GridLayout):
         self.password = TextInput(password=True, multiline=False)
         self.add_widget(self.password)
 
+
 class MyApp(App):
     """
     My App
     """
+    
     def build(self):
         return LoginScreen()
+
 
 if __name__ == "__main__":
     MyApp().run()
